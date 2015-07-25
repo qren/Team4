@@ -2,18 +2,16 @@
 ### Add your face to the board.  Tell the world your story ###
 ##### Team 4:  We Code Hackathon, sponsored by Nike/Puppet Labs #####
 
-The Diversity Board was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  
+The Diversity Board was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  This app is a dynamic, ever-growing photo gallery of people and the stories they choose to share.  Explore the diverse world in which we live.  Add yourself to the mix.
 
 Users are encouraged to:
 
 1. upload a photo or avatar
 
 2. say something you want the world to know about you
- 
-Explore the diverse world in which we live.
 
 
-## Required tools
+#### Required tools ####
 
 If you don't already have these tools, download and install them before you start working with the Apparel Store app.
 
