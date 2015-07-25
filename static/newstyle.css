@@ -73,7 +73,11 @@ p {
 	background-color: #000;
 }
 
-
+.new-profile{
+    max-width: 30%;
+    margin: 18%;
+    margin-left: 33%
+}
 
 
 
