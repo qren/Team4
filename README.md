@@ -1,16 +1,16 @@
 # README
 
-Use this readme to get started setting up and exploring the Apparel Store web application. *Next Steps* suggests tasks to modify the app to better familiarize you with how it works.
+# The Diversity Board #
+## Add your face to the board.  Tell the world your story ##
 
-# About the App
+## Team4 ##
+### We Code Hackathon, sponsored by Nike/Puppet Labs ###
 
-This sample template creates a web application that allows you to create "listings" by filling in a few fields in a form. The listings are stored in the data.txt file.
+The Diversity Board was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  Our hope is that people will post pictures and share their stories, whether it be one line or a narrative.  
 
-You can mark a listing as sold which changes the color of the listing and strikes out its text. 
-
-You can also click **Delete** on a listing to permanently delete it from the data.txt file.
-
-Read the notes in the code to get a better idea of which parts are doing what. Don't be afraid to open the files and read through them to learn how things are working together. 
+Users are encouraged to:
+1. upload a photo
+2. say something you want the world to know about you
 
 ## Required tools
 
@@ -20,8 +20,8 @@ If you don't already have these tools, download and install them before you star
 * Command Line Interface (CLI)
 	* Mac OSX: Terminal is already installed, or try [iTerm](https://www.iterm2.com/)
 	* Windows: Command Prompt (DOS)
-* [Node.js](https://nodejs.org/download/) 
-* A text editor or coding tool of your choice. [Sublime Text 2](http://www.sublimetext.com/2) is available for free for Mac and Windows, but will occassionally ask you to purchase a license when you save your files. 
+* [Node.js](https://nodejs.org/download/)
+* A text editor or coding tool of your choice. [Sublime Text 2](http://www.sublimetext.com/2) is available for free for Mac and Windows, but will occassionally ask you to purchase a license when you save your files.
 
 ## Setup
 
@@ -79,16 +79,16 @@ To install the app, type `npm install` and press return. You should see several 
 
 To start the app, type `node app.js` in the command line. After a few seconds, you should see a success message. Keep your command line tool open, and open a new tab in your web browser. In the URL bar, type `http://localhost:8889/static/index.html`.
 
-When the page loads, there should be a sample item already in your store. To see the app in action, resize your browser window to take up one half of the screen, and the command line to take up the other half. Watch what happens in the command line when you click the "Delete" button on the existing listing. 
+When the page loads, there should be a sample item already in your store. To see the app in action, resize your browser window to take up one half of the screen, and the command line to take up the other half. Watch what happens in the command line when you click the "Delete" button on the existing listing.
 
 		Success reading file:  data.txt
 
-In the browser, create a new listing by entering an Author, Description, and Price in the form and clicking **Add Listing**. You should get the same success message. The app is changing entries in the data.txt file as you interact with the browser. 
+In the browser, create a new listing by entering an Author, Description, and Price in the form and clicking **Add Listing**. You should get the same success message. The app is changing entries in the data.txt file as you interact with the browser.
 
 To stop serving the page to your browser, press Control+C in the CLI.
 
 
-### Exploratory Questions 
+### Exploratory Questions
 
 What happens if you open data.txt and edit the file?
 
@@ -96,20 +96,9 @@ What file(s) would you change to add a field to the form?
 
 How is the date being filled in? How would you change the timezone to Chicago (CST)?
 
-## Next Steps
-
-Try some of these tasks on your own to improve this app, and familiarize (or refresh) yourself with JavaScript and Node.js.
-
-* Create an alert when the user tries to Delete a listing, and ask them to verify that they want to permanently delete the item.
-
-* Add a new field to the form, 'Size'. Make the user select their size from a drop-down menu.
-
-* Advanced: Create an "Edit" function, so that the user doesn't have to delete a listing or open the data.txt file if they make a typo.
 
 ## Resources
 
 * [Node](https://nodejs.org/)
 * [NodeSchool](http://nodeschool.io/)
 * [npm](https://www.npmjs.com/)
-
-# Team4
