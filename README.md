@@ -1,10 +1,6 @@
-# README
-
 # The Diversity Board #
-## Add your face to the board.  Tell the world your story ##
-
-## Team4 ##
-### We Code Hackathon, sponsored by Nike/Puppet Labs ###
+### Add your face to the board.  Tell the world your story ###
+##### Team 4:  We Code Hackathon, sponsored by Nike/Puppet Labs #####
 
 The Diversity Board was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  
 
