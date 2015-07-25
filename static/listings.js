@@ -18,52 +18,55 @@
   // Implement addListing()
   function addListing(){
 	var newListing = {};
-	
-	console.log("hello");	
+
+	console.log("hello");
 	var ai = $('#author-input').val();
 	var di = $('#desc-input').val();
 	var pi = $('#price-input').val();
-	
+
 	newListing.author = ai;
 	newListing.desc = di;
 	newListing.price = pi;
 	newListing.date = new Date();
 
 	print(newListing);
-	
+
 	listings.push(newListing);
 	window.add(di, ai, pi);
 	refreshDOM();
-	
+
 	// Clear Inputs
 	$('#author-input').val("");
 	$('#desc-input').val("");
 	$('#price-input').val("");
   }
- 
+
 
   // Implement refreshDOM()
   function refreshDOM(){
 	if (listings === undefined) return;
-	
+
 	var container = $(".listings");
 	container.html("");
-    
+
+	shuffle(listings);
+
 	for (var i=0; i<listings.length; i++){
+
 		var currentListing = listings[i];
 		var listItem = $("<li>");
 		// content
-		listItem.append($("<h3>").html(currentListing.author));
-		listItem.append("<h6>" + currentListing.date + "</h6>");
-		listItem.append("<p>" + currentListing.desc + "</p>");
-		listItem.append("<p>$" + currentListing.price + "</p>");
-		
+//		listItem.append("<h6>" + currentListing.date + "</h6>");
+//		listItem.append("<p>" + currentListing.desc + "</p>");
+//		listItem.append("<p>$" + currentListing.price + "</p>");
+        listItem.append("<div><img src=" + currentListing.author + "></div>");
+
 		if (currentListing.sold === true) {
 			print("its sold already");
 			listItem.addClass("sold");
 		}
-		
-		
+
+
 		// delete button
 		var delButton = $("<a class='del'>").attr("id", i).html("Delete");
 		listItem.append(delButton);
@@ -75,7 +78,7 @@
 			window.del(buttonID);
 			refreshDOM();
 		});
-		
+
 		// sold button
 		var soldButton = $("<a>").attr("id", i).html("Sold!");
 		listItem.append(soldButton);
@@ -85,19 +88,19 @@
 
 			buttonClicked.parent().addClass("sold");
 			listings[buttonID].sold = true;//!(listings[buttonID].sold);
-			
+
 			/* edit(id, desc, author, price, sold) */
 			window.edit(buttonID, l.desc, l.author, undefined, true );
 			// refreshDOM();
 		});
-		
+
 		// listItem += "</li>";
-		
-		
+
+
 		$(".listings").append(listItem);
 	}
-  }  
-  
+  }
+
   // Implement the get() function
   function get() {
     $.ajax({
@@ -134,7 +137,7 @@
     $.ajax({
       type: "delete",
       url: "/listings/" + id,
-      success: function(data) { 
+      success: function(data) {
         //console.log(data);
       }
     });
@@ -151,3 +154,22 @@
   $(document).ready(function() {
     get();
   });
+
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex ;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
