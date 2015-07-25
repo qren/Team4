@@ -22,23 +22,23 @@
 	console.log("hello");
 	var ai = $('#author-input').val();
 	var di = $('#desc-input').val();
-	var pi = $('#price-input').val();
+	//var pi = $('#price-input').val();
 
 	newListing.author = ai;
 	newListing.desc = di;
-	newListing.price = pi;
+	//newListing.price = pi;
 	newListing.date = new Date();
 
 	print(newListing);
 
 	listings.push(newListing);
-	window.add(di, ai, pi);
+	window.add(di, ai);
 	refreshDOM();
 
 	// Clear Inputs
 	$('#author-input').val("");
 	$('#desc-input').val("");
-	$('#price-input').val("");
+	//$('#price-input').val("");
   }
 
 
@@ -49,15 +49,21 @@
 	var container = $(".listings");
 	container.html("");
 
-	shuffle(listings);
+    var rand = [];
+    for (var i=0; i<listings.length; i++) {
+        rand.push(i);
+    }
+
+	shuffle(rand);
+	console.log(rand);
 
 	for (var i=0; i<listings.length; i++){
 
-		var currentListing = listings[i];
+		var currentListing = listings[rand[i]];
 		var listItem = $("<li>");
 		// content
 //		listItem.append("<h6>" + currentListing.date + "</h6>");
-//		listItem.append("<p>" + currentListing.desc + "</p>");
+    	listItem.append("<p>" + currentListing.desc + "</p>");
 //		listItem.append("<p>$" + currentListing.price + "</p>");
         listItem.append("<div><img src=" + currentListing.author + "></div>");
 
@@ -79,20 +85,20 @@
 			refreshDOM();
 		});
 
-		// sold button
-		var soldButton = $("<a>").attr("id", i).html("Sold!");
-		listItem.append(soldButton);
-		soldButton.click(function(){
-			var buttonClicked = $(this);
-			var buttonID = buttonClicked.attr("id");
-
-			buttonClicked.parent().addClass("sold");
-			listings[buttonID].sold = true;//!(listings[buttonID].sold);
-
-			/* edit(id, desc, author, price, sold) */
-			window.edit(buttonID, l.desc, l.author, undefined, true );
-			// refreshDOM();
-		});
+//		// sold button
+//		var soldButton = $("<a>").attr("id", i).html("Sold!");
+//		listItem.append(soldButton);
+//		soldButton.click(function(){
+//			var buttonClicked = $(this);
+//			var buttonID = buttonClicked.attr("id");
+//
+//			buttonClicked.parent().addClass("sold");
+//			listings[buttonID].sold = true;//!(listings[buttonID].sold);
+//
+//			/* edit(id, desc, author, price, sold) */
+//			window.edit(buttonID, l.desc, l.author, undefined, true );
+//			// refreshDOM();
+//		});
 
 		// listItem += "</li>";
 
