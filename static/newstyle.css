@@ -1,3 +1,7 @@
+.profile-form{
+	background-color: white;
+}
+
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #000;
@@ -8,10 +12,12 @@ body {
 }
 
 h1 {
-	color: #E7BBD6;
+	color: #000;
 	text-align: center;
 }
+#li-redirect{
 
+}
 #imageGallery {
 	list-style:none;
 	margin: 0 auto;
@@ -62,6 +68,11 @@ a {
 #overlay p {
 	color: #FFF; 
 }
+#story{
+	height: 100px;
+	width: 65%;
+	overflow: scroll; 
+}
 
 p {
 	padding-left: 200px;
@@ -79,6 +90,9 @@ p {
     margin-left: 33%
 }
 
+.story{
+	height:100px;
+}
 
 
 
