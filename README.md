@@ -1,8 +1,8 @@
-# The Diversity Board #
+# Storyscope #
 ### Add your face to the board.  Tell the world your story ###
 ##### Team 4:  We Code Hackathon, sponsored by Nike/Puppet Labs #####
 
-The Diversity Board was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  This app is a dynamic, ever-growing photo gallery of people and the stories they choose to share.  Explore the diverse world in which we live.  Add yourself to the mix.
+Storyscope was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  This app is a dynamic, ever-growing photo gallery of people and the stories they choose to share.  Explore the diverse world in which we live.  Add yourself to the mix.
 
 Users are encouraged to:
 
