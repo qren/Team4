@@ -6,13 +6,16 @@
 ## Team4 ##
 ### We Code Hackathon, sponsored by Nike/Puppet Labs ###
 
-The Diversity Board was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  Our hope is that people will post pictures and share their stories, whether it be one line or a narrative.  
+The Diversity Board was created to inspire people to embrace diversity.  We are NOT all the same ...and that's a good thing.  
 
 Users are encouraged to:
 
-1. upload a photo
+1. upload a photo or avatar
 
 2. say something you want the world to know about you
+ 
+Explore the diverse world in which we live.
+
 
 ## Required tools
 
