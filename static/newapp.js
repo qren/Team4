@@ -16,7 +16,8 @@ $("body").append($overlay);
 
 //Capture the click event on a link to an image
 $("#imageGallery a").click(function(event){
-  if (this != document.getElementByID("li-redirect")){
+  //if (this != document.getElementByID("li-redirect"))
+  {
     event.preventDefault();
     var imageLocation = $(this).attr("href");
     //Update overlay with the image linked in the link
