@@ -1,0 +1,89 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #000;
+	margin-top:0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	color: #E7BBD6;
+	text-align: center;
+}
+
+#imageGallery {
+	list-style:none;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	max-width: 100%;
+	text-align: center;
+}
+
+#imageGallery li {
+	display: inline-block;
+	padding: 5px;
+	background: white;
+	margin: 10px;
+}
+
+#imageGallery li img {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+#imageGallery li:hover {
+	border: 5px solid #FFF; 
+}
+
+
+/** Start Coding Here **/
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+#overlay img {
+ margin-top: 10%; 
+}
+
+#overlay p {
+	color: #FFF; 
+}
+
+p {
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
